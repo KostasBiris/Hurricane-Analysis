@@ -28,7 +28,13 @@ deaths = [90,4000,16,3103,179,184,408,682,5,1023,43,319,688,259,37,11,2068,269,3
 
 
 # write your construct hurricane dictionary function here:
+def hurr_dict_creator():
+    hurricanes = {}
 
+    for i in range(33):
+        hurricanes[names[i]] = {'Name' : names[i], 'Month' : months[i], 'Year' : years[i], 'Max Sustained Wind' : max_sustained_winds[i], 'Areas Affected' : areas_affected[i], 'Damage' : damages[i], 'Deaths' : deaths[i]}
+        
+    print(hurricanes)
 
 
 
